@@ -13,3 +13,15 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 Bonus:
 1 - cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 2 -  aggiungere un altro bottone che permetta la modifica di un task gia' esistente
+
+||PROCEDURA||
+
+Collego vue con il file html
+Creo il container per vue nel file html
+Aggiungo la struttura di vue nel file js
+Creo un array con la lista di oggetti con due proprietá ciascuno al suo interno
+Stampo con un ciclo for la lista sull'html
+Creo una variabile dove se la propritá done é uguale a ture il testo verrá sbarrato
+Creo un ascoltatore di eventi per far eliminare l'oggetto dalla lista una volta cliccata la 'x' precedentemente creata a fianco dell'oggetto
+Creo un input testuale e un bottone "aggiungi" nel file html 
+Creo un ascoltatore di eventi per fare in modo di creare un nuovo oggetto con il testo inserito nell'input testuale per poi stamparlo in pagina
