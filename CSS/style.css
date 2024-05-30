@@ -1,3 +1,9 @@
 body{
     background-color: aqua;
 }
+.done{
+    text-decoration: line-through;
+}
+.ah{
+    color: red;
+}
