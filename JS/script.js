@@ -25,12 +25,19 @@ createApp({
                     done: true
                 }
             ],
-
+            textAdd: ''
         }
     },
     methods:{
-        remove(index){
+        remove: function(index){
             this.todos.splice(index, 1)
+        },
+        add: function(){
+            const textToAdd = this.textAdd.trim();
+            if(textToAdd){
+                this.todos.push({text: textToAdd, done: false});
+                this.textAdd = ''
+            }
         }
     }
 }).mount('#app')

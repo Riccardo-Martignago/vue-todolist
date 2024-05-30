@@ -15,6 +15,8 @@
                     <span @click='remove'>X</span>
                 </li>
             </ul>
+            <input type="text" v-model="textAdd" @keydown.enter="add">
+            <button @click='add'>AGGIUNGI</button>
         </article>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
