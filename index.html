@@ -8,7 +8,13 @@
 </head>
 <body>
     <div id="app">
-        {{message}}
+        <article>
+            <ul>
+                <li v-for="item in todos">
+                    {{item.text}}
+                </li>
+            </ul>
+        </article>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="text/javascript" src="./JS/script.js"></script>
