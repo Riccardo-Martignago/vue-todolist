@@ -25,10 +25,12 @@ createApp({
                     done: true
                 }
             ],
-            
+
         }
     },
     methods:{
-
+        remove(index){
+            this.todos.splice(index, 1)
+        }
     }
 }).mount('#app')

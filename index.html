@@ -10,8 +10,9 @@
     <div id="app">
         <article>
             <ul>
-                <li v-for="item in todos" :class="item.done == true ? 'done': ''">
-                    {{item.text}}
+                <li v-for="item in todos">
+                    <span :class="item.done == true ? 'done': ''">{{item.text}}</span>
+                    <span @click='remove'>X</span>
                 </li>
             </ul>
         </article>
